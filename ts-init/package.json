@@ -1,0 +1,33 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.1",
+  {{#if description}}
+  "description": "{{description}}",
+  {{else}}
+  {{/if}}
+  "license": "MIT",
+  "author": "any-u",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsup src/index.ts --format cjs,esm --dts"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.0",
+    "tslib": "^2.4.0",
+    "tsup": "^5.12.9",
+    "typescript": "^4.7.2"
+  }
+}
