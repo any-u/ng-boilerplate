@@ -22,7 +22,9 @@
     },
     {{/if}}
     methods: {
-
+      init() {
+        
+      }
     }
   }
 </script>
