@@ -20,7 +20,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup"
+    "build": "rimraf dist && unbuild"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",
@@ -28,7 +28,7 @@
     "ts-node": "^10.8.0",
     "tsconfig-paths": "^4.0.0",
     "tslib": "^2.4.0",
-    "tsup": "^5.12.9",
-    "typescript": "^4.7.2"
+    "typescript": "^4.7.2",
+    "unbuild": "^0.7.4"
   }
 }
