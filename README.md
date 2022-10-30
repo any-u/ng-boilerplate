@@ -7,7 +7,7 @@ common code templates available for [ng](https://github.com/any-u/ng)
 use it to generate component 
 
 #### Alias
-`vue-init`
+`vi`
 
 #### Options
 | Options | Type     | Description                |
@@ -19,7 +19,7 @@ use it to generate component
 ### Typescirpt Init
 use it to initialize typescript project
 #### Alias
-`ts-init`
+`ti`
 
 #### Options
 | Options | Type     | Description                |
@@ -27,6 +27,16 @@ use it to initialize typescript project
 | `name` | `string` | **Required**. project name |
 | `description` | `boolean` | project description  |
 
+### Node Init
+use it to initialize simple node project
+
+#### Alias
+`ni`
+
+#### Options
+| Options | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string` | **Required**. project name |
 
 
 
