@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "rootDir": "src",
-    "outDir": "lib",
-    "target": "es5",
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["esnext","dom", "DOM.Iterable"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "useUnknownInCatchVariables": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "./types",
     "resolveJsonModule": true,
-    "downlevelIteration": true,
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "allowJs": true
   },
-  "include": ["./src"],
-  "exclude": ["node_modules", "**/*.spec.js", "packages"],
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  }
+  "exclude": ["node_modules", "**/*.spec.js"],
 }
