@@ -1,4 +1,4 @@
-import { defineConfig, InputPluginOption, ExternalOption } from 'rollup'
+import { defineConfig, InputPluginOption } from 'rollup'
 import esbuild from 'rollup-plugin-esbuild'
 import dts from 'rollup-plugin-dts'
 import { nodeResolve } from '@rollup/plugin-node-resolve';
@@ -12,10 +12,6 @@ const plugins: InputPluginOption = [
   commonjs(),
 ]
 
-const external: ExternalOption = [
-  "puppeteer"
-]
-
 export default defineConfig([{
   input,
   output: {
@@ -23,7 +19,6 @@ export default defineConfig([{
     format: 'es'
   },
   plugins,
-  external
 }, {
   input,
   output: {
@@ -34,5 +29,4 @@ export default defineConfig([{
     ...plugins,
     dts()
   ],
-  external
 }])
