@@ -1,0 +1,29 @@
+{
+	"custom router": {
+		"prefix": "$router",
+		"description": "自定义路由",
+		"body": [
+			"import Router from '@koa/router'",
+			"import { ${TM_FILENAME_BASE}Controller } from '../controllers'",
+			"",
+			"const router = new Router({",
+			"  prefix: '/${TM_FILENAME_BASE}'",
+			"})",
+			"",
+			"router.get('/', ${TM_FILENAME_BASE}Controller.$1)",
+			"",
+			"export default router"
+		],
+	},
+	"custom controller": {
+		"prefix": "$controller",
+		"description": "自定义控制器",
+		"body": [
+			"import { Context } from 'koa'",
+			"",
+			"export async function $1(ctx: Context) {",
+			"  $2",
+			"}"
+		]
+	}
+}
