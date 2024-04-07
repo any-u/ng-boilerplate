@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "TS Launch",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/node_modules/esno/esno.js",
+      "program": "${workspaceFolder}/node_modules/tsx/dist/cli.mjs",
       "args": ["watch", "src/index.ts"],
       "cwd": "${workspaceRoot}",
     }

@@ -9,8 +9,8 @@
       "request": "launch",
       "name": "TS Launch",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
-      "args": ["src/index.js"],
+      "program": "${workspaceFolder}/node_modules/tsx/dist/cli.mjs",
+      "args": ["watch", "src/index.js"],
       "cwd": "${workspaceRoot}",
       // use it to debug inquirer
       // "console": "integratedTerminal"
